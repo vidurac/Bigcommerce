@@ -1,0 +1,28 @@
+// =============================================================================
+// TEXT (Tools)
+// =============================================================================
+
+// Text Lead
+// -----------------------------------------------------------------------------
+
+@mixin u-introHeader ($important: null) {
+    font-family: $fontFamily-intro-header;
+    line-height: 1.6 $important;
+    font-size:1.2em $important; 
+}
+
+// Image Overlay Text
+// -----------------------------------------------------------------------------
+
+@mixin u-imageOverlayText ($important: null) {
+    font-family: $fontFamily-image-overlay;
+    line-height: 1.6 $important;
+    font-size:1.7em $important; 
+}
+
+// Image Overlay Text
+// -----------------------------------------------------------------------------
+
+@mixin u-headerUnderline ($important: null) {
+    border-bottom: 5px solid $color-primary;
+}

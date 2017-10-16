@@ -19,6 +19,9 @@
     top: 0;
     width: 100%;
     z-index: zIndex("low");
+    .test {
+        @include grid-row();
+    }
 
     @include breakpoint("medium") {
         border-bottom: container("border");
@@ -37,16 +40,17 @@
 
 .header-logo {
     font-size: 0;   // 1
-    margin: 0 remCalc($header-toggle-width); // 2
+    //margin: 0 remCalc($header-toggle-width); // 2
     text-align: center;
+    @include grid-column(6);
 
     @include breakpoint("small") { // 4
-        margin-left: remCalc($header-toggle-width * 1.5);
-        margin-right: remCalc($header-toggle-width * 1.5);
+        //margin-left: remCalc($header-toggle-width * 1.5);
+        //margin-right: remCalc($header-toggle-width * 1.5);
     }
 
     @include breakpoint("medium") {
-        margin: (spacing("double") + spacing("base")) auto (spacing("double") + spacing("single"));
+       // margin: (spacing("double") + spacing("base")) auto (spacing("double") + spacing("single"));
         padding: 0;
 
         .header.fixed & {
@@ -218,5 +222,3 @@
 
     }
 }
-
-@import 'gooseHeader';

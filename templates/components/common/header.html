@@ -10,19 +10,23 @@
         <span class="mobileMenu-toggleIcon">Toggle menu</span>
     </a>
     {{> components/common/navigation}}
-
-    {{#if page_type '===' 'default'}}
-        <h1 class="header-logo header-logo--{{theme_settings.logo-position}}">
-            {{> components/common/store-logo}}
-        </h1>
-    {{else}}
-        <div class="header-logo header-logo--{{theme_settings.logo-position}}">
-            {{> components/common/store-logo}}
+    <div class="container">
+        <div class="test">
+            {{#if page_type '===' 'default'}}
+                <h1 class="header-logo header-logo--{{theme_settings.logo-position}}">
+                    {{> components/common/store-logo}}
+                </h1>
+            {{else}}
+                <div class="header-logo header-logo--{{theme_settings.logo-position}}">
+                    {{> components/common/store-logo}}
+                </div>
+            {{/if}}
+            <div class="navPages-container" id="menu" data-menu>
+                {{> components/common/navigation-menu}}
+            </div>
+            {{{region name="header_bottom"}}}
         </div>
-    {{/if}}
-    {{{region name="header_bottom"}}}
-    <div class="navPages-container" id="menu" data-menu>
-        {{> components/common/navigation-menu}}
     </div>
+   
 
 </header>

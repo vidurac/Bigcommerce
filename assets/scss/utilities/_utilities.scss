@@ -6,3 +6,8 @@
 $exportCSS--displayUtilities:           true;
 
 $exportCSS--textUtilities:              true;
+
+$exportCSS--GooseTextUtilities:              true;
+
+// Text
+@import "gooseText/gooseText";

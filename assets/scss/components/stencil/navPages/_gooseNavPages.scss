@@ -47,6 +47,11 @@
     right: 0;
     z-index: zIndex("lower");
 
+    @include grid-column(
+        $columns:6,
+        $last-column:true
+    );
+
     @include breakpoint("medium") {
         background: transparent;
         display: block;
@@ -454,5 +459,3 @@
         }
     }
 }
-
-@import "gooseNavPages";

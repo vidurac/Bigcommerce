@@ -16,6 +16,7 @@ blog:
         {{> components/carousel}}
     {{/if}}
     {{{snippet 'home_content'}}}
+    <p>Works</p>
 {{/partial}}
 
 {{#partial "page"}}
@@ -25,12 +26,6 @@ blog:
     {{/each}}
 
 <div class="main full">
-    <div class="patterns">
-        <h1 class="u-headerUnderline">Typography Example</h1>
-        <p class="u-introHeader">Ihicaes autes samus. Dae lam que volest laborum quatur, simus quatemp ereped ut exeria nonsequam conecto tassunt vercit acim nia esse cullam cum quo tessequ istotas.</p>
-        <p>Ihicaes autes samus. <strong>Dae lam que volest laborum quatur</strong>, simus quatemp ereped ut exeria nonsequam conecto tassunt vercit acim nia esse cullam cum quo tessequ istotas.</p>
-        <p class="u-imageOverlayText">Test image overlay text</p>
-    </div>
     {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
     {{/if}}

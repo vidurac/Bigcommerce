@@ -1,0 +1,25 @@
+// =============================================================================
+// TEXT (CSS)
+// =============================================================================
+
+
+// Bigcommerce Utility Classes
+// -----------------------------------------------------------------------------
+//
+// 1. If set to false, there is no outputted CSS for this component.
+// Adapted from SUIT CSS: https://github.com/suitcss/utils-text/
+//
+// -----------------------------------------------------------------------------
+// scss-lint:disable ImportantRule
+
+@if $exportCSS--GooseTextUtilities { // 1
+    .u-introHeader {
+        @include u-introHeader(!important);
+    }
+    .u-imageOverlayText  {
+        @include u-imageOverlayText (!important);
+    }
+    .u-headerUnderline  {
+        @include u-headerUnderline (!important);
+    }
+}
